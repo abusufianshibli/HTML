@@ -6,7 +6,7 @@
 }
 .start{
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,4)),url(/CityProject/asstes/images/bag.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,4)),url(../images/bag.jpg);
     background-position: center;
     background-size: cover;
     overflow: hidden;
