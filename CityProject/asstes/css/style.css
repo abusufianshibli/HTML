@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+
+}
+.start{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,4)),url(/CityProject/asstes/images/bag.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.nav_bar{
+    display: flex;
+    padding: 40px 120px;
+
+}
+.nav_logo img{
+    width: 140px;
+    color: #fff;
+}
+.nav_links{
+    flex: 1;
+}
+.nav_links ul{
+    margin-left: 60px;
+    display: inline;
+}
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+}
+.nav_links ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav_links ul li::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: goldenrod;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav_links ul li:hover::after{
+    width: 100%;
+}
+.btn{
+    padding: 15px 25px;
+    border: 0;
+    background: greenyellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav_links .btn{
+    float: right;
+}
+.banner_title{
+    margin: 80px 150px;
+    color: #fff;
+
+}
+.banner_title h1{
+    font-size: 65px;
+    margin-bottom: 25px;
+}
+.banner_title span{
+    color: gold;
+}
+.vertical_bar{
+height: 100%;
+background: #000;
+top: 0;
+left: 0;
+position: absolute;
+
+}
+.serch_icon{
+    height: 60%;
+    width: 80px;
+}
+.serch_icon .fa{
+    margin: 45px 23px;
+    display:block;
+    color: #fff;
+
+    font-size: 30x;
+    cursor: pointer;
+}
+.social_icons{
+    height: 60%;
+    width: 80px;
+}
+.social_icons{
+    height: 35%;
+    width: 80px;
+    background: goldenrod;
+    text-align: center;
+    padding-top:27%;
+    bottom: 0;
+    position: absolute;
+
+}
+.social_icons .fa{
+    margin: 15px 23px;
+    display: block;
+    padding: 8px;
+    border: 2px solid #000;
+    border-radius: 60%;
+    cursor: pointer;
+
+}
+.nav_bar .fa{
+    display: none;
+}
+@media(max-width:700px){
+    .vertical_bar{
+        display: none;
+    }
+    .banner_title{
+        margin: 80px 40px;
+
+    }
+    .banner_title h1{
+        font-size: 50px;
+
+    }
+    .nav_bar{
+        padding: 10px 30px ;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .nav_bar .fa{
+        display: block;
+        color: #fff;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav_links{
+        height: 100vh;
+        width: 200px;
+        background: #000;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        text-align: left;
+        z-index: 2;
+    }
+    .nav_links ul a{
+        display: block;
+
+    }
+    .nav_links .btn{
+        float: none;
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+    
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello! HTML</title>
+    <link rel="stylesheet" href="/CityProject/asstes/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+  </head>
+  <body>
+    <div class="start">
+      <div class="nav_bar">
+        <div class="nav_logo">
+          <img src="/CityProject/asstes/images/logo.png" />
+        </div>
+        <div class="nav_links" id ="nav_links">
+            <i class="fa fa-close" onclick="closeMenu()"></i>
+          <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Work</li></a>
+          </ul>
+          <button type="button" class="btn">SING UP</button>
+        </div>
+        <i class="fa fa-bars "onclick="showMenu()"></i>
+      </div>
+      <div class="banner_title">
+          <h1>Let's move from <span> City<br> And develope the</span> ruler areas</h1>
+          <button type="button" class="btn">Explore</button>
+      </div>
+      <div class="vertical_bar">
+          <div class="serch_icon">
+            <i class="fa fa-list"></i>
+            <i class="fa fa-search"></i>
+          </div>
+          <div class="social_icons">
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-instagram"></i>
+          </div>
+
+      </div>
+    </div>
+
+    <script>
+        var show=document.getElementById("nav_links");
+        function showMenu(){
+            show.style.right="0";
+
+        }
+        function closeMenu(){
+            show.style.right="-200px";
+
+        }
+    </script>
+  </body>
+</html>
